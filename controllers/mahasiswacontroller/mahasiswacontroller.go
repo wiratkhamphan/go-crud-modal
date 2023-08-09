@@ -67,7 +67,7 @@ func GetForm(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		data = map[string]interface{}{
-			"title":     "Tambah Data Mahasiswa",
+			"title":     "Birthday",
 			"mahasiswa": mahasiswa,
 		}
 	} else {

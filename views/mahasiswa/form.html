@@ -13,22 +13,22 @@
                     <input type="text" name="nama_lengkap" value="{{ .mahasiswa.NamaLengkap }}" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="">Jenis Kelamin</label>
+                    <label for="">Sex</label>
                     <select name="jenis_kelamin" class="form-control">
-                        <option {{ if eq .mahasiswa.JenisKelamin `L` }} selected {{ end }} value="L">Laki-laki</option>
-                        <option {{ if eq .mahasiswa.JenisKelamin `P` }} selected {{ end }} value="P">Perempuan</option>
+                        <option {{ if eq .mahasiswa.JenisKelamin `M` }} selected {{ end }} value="M">Male</option>
+                        <option {{ if eq .mahasiswa.JenisKelamin `W` }} selected {{ end }} value="W">female</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="">Tempat Lahir</label>
+                    <label for="">Day</label>
                     <input type="text" name="tempat_lahir"  value="{{ .mahasiswa.TempatLahir }}" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="">Tgl.Lahir</label>
+                    <label for="">Birthday</label>
                     <input type="date" name="tanggal_lahir"  value="{{ .mahasiswa.TanggalLahir }}" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="">Alamat</label>
+                    <label for="">Address</label>
                     <textarea name="alamat" class="form-control">{{ .mahasiswa.Alamat }}</textarea>
                 </div>
             </div>
